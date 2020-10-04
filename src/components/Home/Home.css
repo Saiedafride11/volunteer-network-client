@@ -1,0 +1,18 @@
+.home-container{
+    height: 30vh;
+    text-align: center;
+    /* border: 1px solid black; */
+    position: relative;
+    
+}
+.banner-container{
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 70px;
+    height: 200px;
+    max-width: 600px;
+    /* border: 1px solid #ccc; */
+}
