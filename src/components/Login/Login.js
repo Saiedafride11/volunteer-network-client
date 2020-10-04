@@ -21,10 +21,10 @@ const Login = () => {
     error: "",
   });
 
-  // let history = useHistory();
-  // let location = useLocation();
+  let history = useHistory();
+  let location = useLocation();
 
-  // let { from } = location.state || { from: { pathname: "/" } };
+  let { from } = location.state || { from: { pathname: "/" } };
 
   const handleGoogleLogin = () => {
     let provider = new firebase.auth.GoogleAuthProvider();
@@ -41,7 +41,7 @@ const Login = () => {
         };
         setLoggedInUser(signedInUser);
 
-        // history.replace(from);
+        history.replace(from);
       })
       .catch(function (error) {
         var errorCode = error.code;
